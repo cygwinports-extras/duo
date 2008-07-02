@@ -1,0 +1,30 @@
+inherit python
+
+DESCRIPTION="UNO card game"
+HOMEPAGE="http://duo.tuxfamily.org/"
+SRC_URI="mirror://sourceforge/duo/${PN}.tar.bz2"
+SRC_DIR=.
+
+src_compile() {
+	lndirs
+	cd ${B}
+	${PYTHON} make-locale.py || error "make-locale.py failed"
+	echo "#! ${PYTHON}" > duo
+	sed -e 's|"./"+||g' \
+		-e "s|'classic'|'/usr/share/duo/classic'|g" \
+		-e "s|\@CONFIG_INI\@|os.getenv('HOME')+'/.duo'|" \
+		-e "s|\@LOCALE_DIR\@|'/usr/share/duo/locale'|" \
+		-e "s|'config.ini'|configfile|g" \
+		-e 's|"locale"|localedir|g' \
+		Duo.pyw >> duo
+	dos2unix duo
+}
+
+src_install() {
+	cd ${B}
+	dobin duo
+
+	dodir /usr/share/duo
+	cp -r ${S}/classic ${D}/usr/share/duo/
+	cp -r locale ${D}/usr/share/duo/
+}

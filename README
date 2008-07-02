@@ -1,0 +1,115 @@
+duo
+------------------------------------------
+Duo is a crazy eight / UNO card game. It's an easy and nice to play game 
+written in Python. You can play against 1, 2 or 3 computer players. It's 
+available in several languages.
+
+Runtime requirements:
+  python-2.5.2-1
+  python-imaging-1.1.6-1
+  python-pmw-1.3.2-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygport-0.3.11-1
+  python-2.5.2-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://duo.tuxfamily.org/
+
+Canonical download:
+  http://downloads.sourceforge.net/duo/
+
+-------------------------------------------
+
+Build instructions:
+  unpack duo-0.8.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./duo-0.8.1-X.cygport all
+
+This will create:
+  /usr/src/duo-0.8.1-X-src.tar.bz2
+  /usr/src/duo-0.8.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/duo
+  /usr/share/doc/duo-0.8.1/LICENSE.txt
+  /usr/share/doc/duo-0.8.1/README.txt
+  /usr/share/duo/classic/+2-blue.png
+  /usr/share/duo/classic/+2-green.png
+  /usr/share/duo/classic/+2-red.png
+  /usr/share/duo/classic/+2-yellow.png
+  /usr/share/duo/classic/+4.png
+  /usr/share/duo/classic/0-blue.png
+  /usr/share/duo/classic/0-green.png
+  /usr/share/duo/classic/0-red.png
+  /usr/share/duo/classic/0-yellow.png
+  /usr/share/duo/classic/1-blue.png
+  /usr/share/duo/classic/1-green.png
+  /usr/share/duo/classic/1-red.png
+  /usr/share/duo/classic/1-yellow.png
+  /usr/share/duo/classic/2-blue.png
+  /usr/share/duo/classic/2-green.png
+  /usr/share/duo/classic/2-red.png
+  /usr/share/duo/classic/2-yellow.png
+  /usr/share/duo/classic/3-blue.png
+  /usr/share/duo/classic/3-green.png
+  /usr/share/duo/classic/3-red.png
+  /usr/share/duo/classic/3-yellow.png
+  /usr/share/duo/classic/4-blue.png
+  /usr/share/duo/classic/4-green.png
+  /usr/share/duo/classic/4-red.png
+  /usr/share/duo/classic/4-yellow.png
+  /usr/share/duo/classic/5-blue.png
+  /usr/share/duo/classic/5-green.png
+  /usr/share/duo/classic/5-red.png
+  /usr/share/duo/classic/5-yellow.png
+  /usr/share/duo/classic/6-blue.png
+  /usr/share/duo/classic/6-green.png
+  /usr/share/duo/classic/6-red.png
+  /usr/share/duo/classic/6-yellow.png
+  /usr/share/duo/classic/7-blue.png
+  /usr/share/duo/classic/7-green.png
+  /usr/share/duo/classic/7-red.png
+  /usr/share/duo/classic/7-yellow.png
+  /usr/share/duo/classic/8-blue.png
+  /usr/share/duo/classic/8-green.png
+  /usr/share/duo/classic/8-red.png
+  /usr/share/duo/classic/8-yellow.png
+  /usr/share/duo/classic/9-blue.png
+  /usr/share/duo/classic/9-green.png
+  /usr/share/duo/classic/9-red.png
+  /usr/share/duo/classic/9-yellow.png
+  /usr/share/duo/classic/back.png
+  /usr/share/duo/classic/inv-blue.png
+  /usr/share/duo/classic/inv-green.png
+  /usr/share/duo/classic/inv-red.png
+  /usr/share/duo/classic/inv-yellow.png
+  /usr/share/duo/classic/jok.png
+  /usr/share/duo/classic/pas-blue.png
+  /usr/share/duo/classic/pas-green.png
+  /usr/share/duo/classic/pas-red.png
+  /usr/share/duo/classic/pas-yellow.png
+  /usr/share/duo/locale/de/LC_MESSAGES/duo.mo
+  /usr/share/duo/locale/de2/LC_MESSAGES/duo.mo
+  /usr/share/duo/locale/en/LC_MESSAGES/duo.mo
+  /usr/share/duo/locale/es/LC_MESSAGES/duo.mo
+  /usr/share/duo/locale/fr/LC_MESSAGES/duo.mo
+  /usr/share/duo/locale/pt_BR/LC_MESSAGES/duo.mo
+
+------------------
+
+Port Notes:
+
+----- version 0.8.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

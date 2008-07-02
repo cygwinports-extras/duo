@@ -1,0 +1,6 @@
+category: Games
+requires: python python-imaging python-pmw
+sdesc: "UNO card game"
+ldesc: "Duo is a crazy eight / UNO card game. It's an easy and nice to 
+play game written in Python. You can play against 1, 2 or 3 computer 
+players. It's available in several languages."
